@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Survey Form- FreeCodeCamp</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Inconsolata:wght@300;700&family=Josefin+Sans:ital@1&family=Lobster&family=Montserrat:wght@100&family=Pacifico&family=Questrial&family=Raleway:wght@100&family=Rubik:ital,wght@1,900&family=Signika+Negative&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+  <div id="main">
+    <h1 id="title">&#9834;
+      Music Survey Form&#9835;</h1>
+    <!--Survey form-->
+    <form id="survey-form">
+
+      <div id="aboutyou">
+        <p id="description">What's your Favourite Type Of Music</p>
+
+        <label for="name" id="name-label">Name</label>
+        <input id="name" type="text" placeholder="John Smith" minlength="3" maxlength="20" class="form-details"
+          required>
+        <label for="email" id="email-label">Email</label>
+        <input id="email" type="email" Placeholder="Johnsmith@gamil.com" class="form-details" required>
+        <label for="number" id="number-label">Age</label>
+        <input id="number" type="number" placeholder="18" min="1" max="100" class="form-details">
+
+        <!--End details-->
+        <!--Radio Buttons-->
+        <div id="platform-used">
+          <fieldset class="form-margin" id="music-source">
+            <legend>Where Is Your Main Source For Music</legend>
+            <!--Purchase-->
+            <label for="Purchase" class="platform">
+              <input id="Purchase" type="radio" name="platform" value="Bought">Purchase</label>
+            <!--Streaming-->
+            <label for="stream" class="platform">
+              <input id="stream" type="radio" name="platform" value="Bought">Streaming<span id="streaming">(via
+                Spotify/Deezer/Apple Music etc..)</span></label>
+            <!--Youtube-->
+            <label for="youtube" class="platform">
+              <input id="youtube" type="radio" name="platform" value="youtube">Youtube</label>
+            <!--Podcast-->
+            <label for="podcast" class="platform">
+              <input id="podcast" type="radio" name="platform" value="podcast">Podcast</label>
+          </fieldset>
+          <!--end radio buttons-->
+        </div>
+        <!--Checkboxes-->
+
+        <fieldset id="genres">
+          <legend>What Genres Of Music Do You Enjoy</legend>
+          <label for="Jazz">
+            <input id="Jazz" name="genres" type="checkbox" value="Jazz">Jazz/Blues</label>
+          <label for="rock">
+            <input id="rock" name="genres" type="checkbox" value="Rock">Rock</label>
+          <label for="Hiphop">
+            <input id="Hiphop" name="genres" type="checkbox" value="Hip Hop">Hip hop</label>
+          <label for="electronic">
+            <input id="electronic" name="genres" type="checkbox" value="Electronic">Electronic</label>
+          <label for="rnb"> <input id="rnb" name="genres" type="checkbox" value="RnB">RnB</label>
+          <label for="classical">
+            <input id="classical" name="genres" type="checkbox" value="Classical">Classical</label>
+          <label for="instrumental"><input id="instrumental" name="genres" type="checkbox"
+              value="Instrumental">Instrumental</label>
+          <label for="country"><input id="country" name="genres" type="checkbox" value="Country">Country</label>
+          <label for="musical"><input id="musical" name="genres" type="checkbox" value="Musicals">Mucicals</label>
+          <label for="opera"><input id="opera" name="genres" type="checkbox" value="Opera">Opera</label>
+          <label for="reggae"> <input id="reggae" name="genres" type="checkbox" value="Reggae">Reggae</label>
+          <label for="pop"><input id="pop" name="genres" type="checkbox" value="Pop">Pop</label>
+          <label for="foreign"><input id="foreign" name="genres" type="checkbox" value="foreign">Foreign</label>
+          <label for="FilmMusic"><input id="FilmMusic" name="genres" type="checkbox" value="Flim Music">Film
+            Music</label>
+        </fieldset>
+        <!--end checkboxes-->
+        <!--Option Dropdown-->
+        <label for="dropdown" id="option-title">Where Do You Enjoy Live Music
+          <select id="dropdown" name="venue" class="form-details">
+            <option value="">--Please Select An Option--</option>
+            <option value="clubs">Clubs</option>
+            <option value="cafe">Cafes</option>
+            <option value="festival">Festivals</option>
+            <option value="arenas">Arenas/Stadiums</option>
+          </select>
+        </label>
+        <!--End of Dropdown-->
+
+        <!--Text Area-->
+        <div id="message">
+          <label id="Txt" for="block"><span id="improve">How Could We Improve These Music Platforms For Better Listening
+              Experiences:</span></label>
+          <textarea id="block" class="form-details" name="text" placeholder="Comment Or Leave A Question"></textarea>
+        </div>
+        <!--end textarea->
+
+      <!-submit Button-->
+        <button class="form-details" id="submit" type="submit" name="button">Submit</button>
+        <!--end Submit-->
+
+
+      </div>
+    </form>
+    <footer id="footer">
+      <div class="Icons">
+        <ul id="foot">
+          <li id="git">
+            <!--Github-->
+            <a class="Footerlink" target="_blank" href="https://github.com/DannnLim"> <img class="Logo"
+                src="http://cdn.onlinewebfonts.com/svg/img_326384.png" alt="Github Logo"></a>
+          </li>
+          <!--Codepen-->
+          <li>
+            <a class="Footerlink" target="_blank" href="https://codepen.io/dannnlim"><img class="Logo"
+                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1116997/codepen.png" alt="Codepen Logo"></a>
+          </li>
+
+          <!--Twitter-->
+          <li>
+            <a class="Footerlink" target="_blank" href="https://twitter.com/DannyLi50904249"><img class="Logo"
+                src="https://logoeps.com/wp-content/uploads/2014/02/23681-twitter-logo-icon-vector-icon-vector-eps.png"
+                alt="Twitter Logo"></a>
+          </li>
+          <!--Freecodecamp-->
+          <li>
+            <a class="Footerlink" target="_blank"
+              href="https://www.freecodecamp.org/fcc95c02ecc-8559-4b55-b5db-bb7feb22f1da"><img class="Logo"
+                src="https://design-style-guide.freecodecamp.org/downloads/fcc_secondary_small.svg"
+                alt="Freecodecamp Logo"></a>
+          </li>
+        </ul>
+      </div>
+      <p id="btm-title">&copy;Danny Lim 2022</p>
+    </footer>
+  </div>
+
+</body>
+
+</html>
